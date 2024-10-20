@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+  char fname[30], lname[30];
+  int l1, l2, i;
+ 
+  
+  printf("Enter first and last name");
+  scanf("%s %s", fname, lname);
+  
+  l1 = strlen(fname);
+  l2 = strlen(lname);
+
+     for(i=0; i<l2; i++)
+     {
+         fname[l1+i]=lname[i];
+     }
+   
+      printf("String after concatenantin is %s", fname);
+   
+   
+   
+    return 0;
+}
